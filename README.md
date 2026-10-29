@@ -1,6 +1,6 @@
 # StrikeCTRL
 
-Versión 0.1.0 · by OmT Finance
+Versión 0.1.1 · by OmT Finance
 
 App web (PWA) que calcula cuánto te cuestan los días de huelga. Lees tus nóminas en PDF (una o varias del
 mismo año) y te dice el impacto en cada nómina, en las pagas extra de julio y diciembre y, según lo que

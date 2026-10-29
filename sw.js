@@ -1,5 +1,5 @@
 // Cambia la versión al modificar archivos para que los móviles descarguen la nueva versión
-const CACHE = 'strike-v1';
+const CACHE = 'strike-v2';
 const ASSETS = [
   './',
   'index.html',

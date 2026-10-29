@@ -1,7 +1,7 @@
 'use strict';
 
 // Versión de la app (se ve en la pantalla de inicio). Arreglos y ajustes: 0.1.x; novedades: 0.x.0.
-const APP_VERSION = '0.1.0';
+const APP_VERSION = '0.1.1';
 const DATA_KEY = 'strike:data';
 const DISPLAY_KEY = 'strike:display';
 const INSTALL_HINT_KEY = 'strike:installHint';
@@ -650,7 +650,7 @@ function render() {
 
     <section class="group">
       <h2 class="label">Resumen del impacto</h2>
-      <div class="card table">
+      <div class="card table sum-table">
         <div class="t-row t-head"><span></span><span>Bruto</span><span>Neto</span></div>
         ${C.blocks.filter((b) => !b.hide).map((b) => `
           <div class="t-row"><span>${b.name}<small>${b.note}</small></span><span>${loss(b.gross)}</span><span>${loss(b.net)}</span></div>`).join('')}

@@ -1,6 +1,6 @@
 # StrikeCTRL
 
-Versión 0.1.1 · by OmT Finance
+Versión 0.2.0 · by OmT Finance
 
 App web (PWA) que calcula cuánto te cuestan los días de huelga. Lees tus nóminas en PDF (una o varias del
 mismo año) y te dice el impacto en cada nómina, en las pagas extra de julio y diciembre y, según lo que
@@ -38,3 +38,8 @@ Los PDF no se guardan: solo los importes que usa el cálculo, en `localStorage` 
 ## Versiones
 
 Cada cambio sube `APP_VERSION` (app.js), esta línea y la caché de `sw.js`: arreglos 0.1.x, novedades 0.x.0.
+
+## Analítica
+
+Vercel Web Analytics (se activa en la pestaña Analytics del proyecto de Vercel, sin cookies). La app es una sola página, así que cada función se cuenta como una página virtual con `track()` en `app.js`. Solo se envía el nombre de la función, nunca datos de la app, y `beforeSend` (en `index.html`) quita de la dirección lo que va tras `?` o `#`.
+
